@@ -1,0 +1,9 @@
+C:\Users\Miksiak\Desktop\Projekt\Projekt\bin\Debug\Projekt.exe.config
+C:\Users\Miksiak\Desktop\Projekt\Projekt\bin\Debug\Projekt.exe
+C:\Users\Miksiak\Desktop\Projekt\Projekt\bin\Debug\Projekt.pdb
+C:\Users\Miksiak\Desktop\Projekt\Projekt\obj\Debug\Projekt.csprojAssemblyReference.cache
+C:\Users\Miksiak\Desktop\Projekt\Projekt\obj\Debug\Projekt.Properties.Resources.resources
+C:\Users\Miksiak\Desktop\Projekt\Projekt\obj\Debug\Projekt.csproj.GenerateResource.cache
+C:\Users\Miksiak\Desktop\Projekt\Projekt\obj\Debug\Projekt.csproj.CoreCompileInputs.cache
+C:\Users\Miksiak\Desktop\Projekt\Projekt\obj\Debug\Projekt.exe
+C:\Users\Miksiak\Desktop\Projekt\Projekt\obj\Debug\Projekt.pdb
