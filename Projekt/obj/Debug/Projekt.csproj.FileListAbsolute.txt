@@ -7,3 +7,4 @@ C:\Users\Miksiak\Desktop\Projekt\Projekt\obj\Debug\Projekt.csproj.GenerateResour
 C:\Users\Miksiak\Desktop\Projekt\Projekt\obj\Debug\Projekt.csproj.CoreCompileInputs.cache
 C:\Users\Miksiak\Desktop\Projekt\Projekt\obj\Debug\Projekt.exe
 C:\Users\Miksiak\Desktop\Projekt\Projekt\obj\Debug\Projekt.pdb
+C:\Users\Miksiak\Desktop\Projekt\Projekt\obj\Debug\Projekt.Form1.resources

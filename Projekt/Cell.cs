@@ -10,11 +10,13 @@ namespace Projekt
     {
         public int Row;
         public int Column;
+        public string Type;
 
         public Cell(int x, int y)
         {
             Row = x;
             Column = y;
+            
         }
 
 

@@ -25,9 +25,9 @@ namespace Projekt
 
                 }
             }
-
+            theGrid[3, 3].Type = "Ja";
         }
-       public static void  printBoard(Board X)
+    /*   public static void  printBoard(Board X)
         {
             for (int i = 0; i < X.Size; i++)
             {
@@ -37,7 +37,7 @@ namespace Projekt
 
                 }
             }
-        }
+        } */
     }
 
    
