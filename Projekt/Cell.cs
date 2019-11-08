@@ -17,6 +17,6 @@ namespace Projekt
             Column = y;
         }
 
-        
+
     }
 }
