@@ -12,10 +12,10 @@ namespace Projekt
 {
     public partial class Form1 : Form
     {
-        static Board B1 = new Board(8);
+        static Board B1 = new Board(9);
 
         public Panel[,] pnlGrid = new Panel[B1.Size, B1.Size];
-        int a1, b1, c, a2 , b2;
+        int a1, b1, c, a2 , b2, N, M;
         
        
 
@@ -33,37 +33,59 @@ namespace Projekt
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.W && pnlGrid[a1, b1 - 1].BackColor != Color.Gray)
+
+           /* if (e.KeyCode == Keys.R)
             {
-                pnlGrid[a1, b1].BackColor = Color.Blue;
-                pnlGrid[a1, b1-1].BackColor = Color.Gold;
-                b1 = b1 - 1;
+                makeBoard();
+            } */
+
+            if (e.KeyCode == Keys.W)
+            {
+                M = -1;
+                N = 0;
             }
             if (e.KeyCode == Keys.S && pnlGrid[a1, b1 + 1].BackColor != Color.Gray)
             {
-                pnlGrid[a1, b1].BackColor = Color.Blue;
-                pnlGrid[a1, b1 + 1].BackColor = Color.Gold;
-                b1 = b1 + 1;
+                M = 1;
+                N = 0;
             }
             if (e.KeyCode == Keys.A && pnlGrid[a1 -1 , b1 ].BackColor != Color.Gray)
             {
-                pnlGrid[a1, b1].BackColor = Color.Blue;
-                pnlGrid[a1 - 1, b1 ].BackColor = Color.Gold;
-                a1 = a1 - 1;
+                M = 0;
+                N = -1;
             }
             if (e.KeyCode == Keys.D && pnlGrid[a1 + 1, b1 ].BackColor != Color.Gray)
             {
-                pnlGrid[a1, b1].BackColor = Color.Blue;
-                pnlGrid[a1 + 1, b1].BackColor = Color.Gold;
-                a1 = a1 + 1;
+                M = 0;
+                N = 1;
             }
 
+
+            if (pnlGrid[a1 + N, b1 + M].BackColor == Color.Gray || (pnlGrid[a1 + 2 * N, b1 + 2 * M].BackColor == Color.Gray && pnlGrid[a1 + N, b1 + M].BackColor == Color.Brown)) ;
+            else if (pnlGrid[a1 + 2 * N, b1 + 2 * M].BackColor != Color.Gray && pnlGrid[a1 + N, b1 + M].BackColor == Color.Brown)
+            {
+                pnlGrid[a1 + 2 * N, b1 + 2 * M].BackColor = Color.Brown;
+                pnlGrid[a1, b1].BackColor = Color.Blue;
+                pnlGrid[a1 + N, b1 + M].BackColor = Color.Gold;
+                a1 = a1 + N;
+                b1 = b1 + M;
+            }
+            else
+            {
+                pnlGrid[a1, b1].BackColor = Color.Blue;
+                pnlGrid[a1 + N, b1 + M].BackColor = Color.Gold;
+                a1 = a1 + N;
+                b1 = b1 + M;
+            }
+
+            
         }
 
         public void makeBoard()
         {
             int Psize = panel1.Width / B1.Size ;
-            
+            a1 = 0;
+            b1 = 0;
             for (int i = 0; i < B1.Size; i++)
             {
                 for (int j = 0; j < B1.Size; j++)
@@ -91,9 +113,16 @@ namespace Projekt
                         a1 = i;
                         b1 = j;
                     }
+                    if (i == 4 & j == 4)
+                    {
+                        pnlGrid[i, j].BackColor = Color.Brown;
+                        pnlGrid[i, j].AccessibleName = "Box";
+                        a2 = i;
+                        b2 = j;
+                    }
 
                     //pnlGrid[4, 4].BackgroundImage = Image.FromFile(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop) + @"\Projekt\Projekt\postac1.png"); 
-                    
+
 
                 }
                 
