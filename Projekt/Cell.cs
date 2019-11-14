@@ -16,7 +16,6 @@ namespace Projekt
         {
             Row = x;
             Column = y;
-            
         }
 
 
