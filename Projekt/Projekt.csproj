@@ -53,10 +53,43 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Lvl1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lvl1.Designer.cs">
+      <DependentUpon>Lvl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lvl2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lvl2.Designer.cs">
+      <DependentUpon>Lvl2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lvl3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lvl3.Designer.cs">
+      <DependentUpon>Lvl3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="win.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="win.Designer.cs">
+      <DependentUpon>win.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lvl1.resx">
+      <DependentUpon>Lvl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lvl2.resx">
+      <DependentUpon>Lvl2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lvl3.resx">
+      <DependentUpon>Lvl3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -66,7 +99,12 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="win.resx">
+      <DependentUpon>win.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -81,9 +119,16 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="postac1.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    <None Include="Resources\bigbox.png" />
+    <None Include="Resources\bigbox.jfif" />
+    <None Include="Resources\ins2.png" />
+    <None Include="Resources\ins.png" />
+    <None Include="Properties\Resources\wall.png" />
+    <None Include="Properties\Resources\me.png" />
+    <None Include="Resources\spot.png" />
+    <None Include="Resources\floor.png" />
+    <None Include="Properties\Resources\box2.png" />
+    <None Include="Properties\Resources\box1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

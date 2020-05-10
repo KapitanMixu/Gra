@@ -1,0 +1,239 @@
+\hypertarget{class_projekt_1_1_lvl1}{}\doxysection{Projekt.\+Lvl1 Class Reference}
+\label{class_projekt_1_1_lvl1}\index{Projekt.Lvl1@{Projekt.Lvl1}}
+
+
+Klasa w której znajdują się niezbędne funkcje i zmienne do utworzenia i działania całego poziomu pierwszego.  
+
+
+Inheritance diagram for Projekt.\+Lvl1\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_projekt_1_1_lvl1}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_projekt_1_1_lvl1_a870f455265094aebfa2b5801bae420e9}{make\+Board}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja, kóra zapełnia pola plnaszy konkretymi wartośćiami i obrazami. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Panel\mbox{[},\mbox{]} \mbox{\hyperlink{class_projekt_1_1_lvl1_ac8a97899d4c0f89af813016269701f9f}{pnl\+Grid}} = new Panel\mbox{[}B1.\+Size, B1.\+Size\mbox{]}
+\begin{DoxyCompactList}\small\item\em Kratki na planszy \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_projekt_1_1_lvl1_a3b3be1689701fd2d4e50571bfcadb4e3}{Dispose}} (bool disposing)
+\begin{DoxyCompactList}\small\item\em Clean up any resources being used. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_projekt_1_1_lvl1_a1078c01bf8d97855fceb572cdf6942db}{Level1\+\_\+\+Form\+Closing}} (object sender, Form\+Closing\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Funkcja sprawia, że po naciśnieciu \char`\"{}krzyżyka\char`\"{} na pasku z grą, aplikacja wyłączy się \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_projekt_1_1_lvl1_aa9a2c32b72fe14e9cc784342b39ca006}{Lvl1\+\_\+\+Key\+Down}} (object sender, Key\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Funkcja która, podejmuje kontretną akcję na podstawie klawisza klawiatury, który został wciśnięty\+: \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_projekt_1_1_lvl1_a56546f55cbdbfe973d518e5edeee0fab}{Initialize\+Component}} ()
+\begin{DoxyCompactList}\small\item\em Required method for Designer support -\/ do not modify the contents of this method with the code editor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_projekt_1_1_lvl1_af6d77b42bc01afef095b345dd61fe004}{a1}}
+\begin{DoxyCompactList}\small\item\em Pierwsza współrzędna postaci \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_projekt_1_1_lvl1_a08ebad8032b6cc57f62fae9485b6236c}{b1}}
+\begin{DoxyCompactList}\small\item\em Druga współrzędna postaci \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_projekt_1_1_lvl1_a92aab4d39ea60f433b3ddae58a08f675}{N}}
+\begin{DoxyCompactList}\small\item\em Pierwsza współrzędna ruchu \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_projekt_1_1_lvl1_aaa07952dc7e6e564321af47ccbda578f}{M}}
+\begin{DoxyCompactList}\small\item\em Druga współrzędna ruchu \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_projekt_1_1_lvl1_a5e93cdc8b196eba41451e03b23209375}{Wynik}} = 0
+\begin{DoxyCompactList}\small\item\em Licznik ruchów \end{DoxyCompactList}\item 
+System.\+Component\+Model.\+I\+Container \mbox{\hyperlink{class_projekt_1_1_lvl1_a942e4c007aebe98e30c2133bd2a2bffb}{components}} = null
+\begin{DoxyCompactList}\small\item\em Required designer variable. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_projekt_1_1_lvl1_a3be211ee2c0a923b81f8ece6e4235eaf}\label{class_projekt_1_1_lvl1_a3be211ee2c0a923b81f8ece6e4235eaf}} 
+System.\+Windows.\+Forms.\+Panel {\bfseries panel1}
+\item 
+\mbox{\Hypertarget{class_projekt_1_1_lvl1_a6bdb0b4155a0d1a67dec297c0ee995b7}\label{class_projekt_1_1_lvl1_a6bdb0b4155a0d1a67dec297c0ee995b7}} 
+System.\+Windows.\+Forms.\+Label {\bfseries Score}
+\item 
+\mbox{\Hypertarget{class_projekt_1_1_lvl1_ab50479fe8a25c99190badd0eba10b93e}\label{class_projekt_1_1_lvl1_ab50479fe8a25c99190badd0eba10b93e}} 
+System.\+Windows.\+Forms.\+Picture\+Box {\bfseries picture\+Box1}
+\item 
+\mbox{\Hypertarget{class_projekt_1_1_lvl1_a4af9e46e0346a488dea4def3e8800bdf}\label{class_projekt_1_1_lvl1_a4af9e46e0346a488dea4def3e8800bdf}} 
+System.\+Windows.\+Forms.\+Label {\bfseries label2}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_projekt_1_1_board}{Board}} \mbox{\hyperlink{class_projekt_1_1_lvl1_aa7e3bce2089f0b8711773919a9f55310}{B1}} = new \mbox{\hyperlink{class_projekt_1_1_board}{Board}}(6)
+\begin{DoxyCompactList}\small\item\em Plansza gry, która jest obiektem klasy \mbox{\hyperlink{class_projekt_1_1_board}{Board}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa w której znajdują się niezbędne funkcje i zmienne do utworzenia i działania całego poziomu pierwszego. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_projekt_1_1_lvl1_a3b3be1689701fd2d4e50571bfcadb4e3}\label{class_projekt_1_1_lvl1_a3b3be1689701fd2d4e50571bfcadb4e3}} 
+\index{Projekt.Lvl1@{Projekt.Lvl1}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!Projekt.Lvl1@{Projekt.Lvl1}}
+\doxysubsubsection{\texorpdfstring{Dispose()}{Dispose()}}
+{\footnotesize\ttfamily override void Projekt.\+Lvl1.\+Dispose (\begin{DoxyParamCaption}\item[{bool}]{disposing }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Clean up any resources being used. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em disposing} & true if managed resources should be disposed; otherwise, false.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_projekt_1_1_lvl1_a56546f55cbdbfe973d518e5edeee0fab}\label{class_projekt_1_1_lvl1_a56546f55cbdbfe973d518e5edeee0fab}} 
+\index{Projekt.Lvl1@{Projekt.Lvl1}!InitializeComponent@{InitializeComponent}}
+\index{InitializeComponent@{InitializeComponent}!Projekt.Lvl1@{Projekt.Lvl1}}
+\doxysubsubsection{\texorpdfstring{InitializeComponent()}{InitializeComponent()}}
+{\footnotesize\ttfamily void Projekt.\+Lvl1.\+Initialize\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Required method for Designer support -\/ do not modify the contents of this method with the code editor. 
+
+\mbox{\Hypertarget{class_projekt_1_1_lvl1_a1078c01bf8d97855fceb572cdf6942db}\label{class_projekt_1_1_lvl1_a1078c01bf8d97855fceb572cdf6942db}} 
+\index{Projekt.Lvl1@{Projekt.Lvl1}!Level1\_FormClosing@{Level1\_FormClosing}}
+\index{Level1\_FormClosing@{Level1\_FormClosing}!Projekt.Lvl1@{Projekt.Lvl1}}
+\doxysubsubsection{\texorpdfstring{Level1\_FormClosing()}{Level1\_FormClosing()}}
+{\footnotesize\ttfamily void Projekt.\+Lvl1.\+Level1\+\_\+\+Form\+Closing (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Form\+Closing\+Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Funkcja sprawia, że po naciśnieciu \char`\"{}krzyżyka\char`\"{} na pasku z grą, aplikacja wyłączy się 
+
+\mbox{\Hypertarget{class_projekt_1_1_lvl1_aa9a2c32b72fe14e9cc784342b39ca006}\label{class_projekt_1_1_lvl1_aa9a2c32b72fe14e9cc784342b39ca006}} 
+\index{Projekt.Lvl1@{Projekt.Lvl1}!Lvl1\_KeyDown@{Lvl1\_KeyDown}}
+\index{Lvl1\_KeyDown@{Lvl1\_KeyDown}!Projekt.Lvl1@{Projekt.Lvl1}}
+\doxysubsubsection{\texorpdfstring{Lvl1\_KeyDown()}{Lvl1\_KeyDown()}}
+{\footnotesize\ttfamily void Projekt.\+Lvl1.\+Lvl1\+\_\+\+Key\+Down (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Key\+Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Funkcja która, podejmuje kontretną akcję na podstawie klawisza klawiatury, który został wciśnięty\+: 
+
+1.\+Po kliknięciu R resetuje poziom
+
+2.\+Po kliknięciu M wraca do menu
+
+3.\+Po kliknieciu W,S,A albo D wykonuje ruch\+:
+
+a)Zmienia wartości M i N w zależności od klikniętego klawisza
+
+b)Sprawdza czy dany ruch jest dozowolony. Jeżeli tak to sprawdza czy postać przesuwa skrzynkę czy nie.
+
+c)Wykonuje ruch.
+
+d)Sprawdza ile skrzynkek jest na swoich miejscach(Jeżeli wyniesie tylie ile założyliśmy na początku gracz wygrywa)
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_projekt_1_1_lvl1_aaa07952dc7e6e564321af47ccbda578f}{M}}, \mbox{\hyperlink{class_projekt_1_1_lvl1_a92aab4d39ea60f433b3ddae58a08f675}{N}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_projekt_1_1_lvl1_a870f455265094aebfa2b5801bae420e9}\label{class_projekt_1_1_lvl1_a870f455265094aebfa2b5801bae420e9}} 
+\index{Projekt.Lvl1@{Projekt.Lvl1}!makeBoard@{makeBoard}}
+\index{makeBoard@{makeBoard}!Projekt.Lvl1@{Projekt.Lvl1}}
+\doxysubsubsection{\texorpdfstring{makeBoard()}{makeBoard()}}
+{\footnotesize\ttfamily void Projekt.\+Lvl1.\+make\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcja, kóra zapełnia pola plnaszy konkretymi wartośćiami i obrazami. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_projekt_1_1_lvl1_ac8a97899d4c0f89af813016269701f9f}{pnl\+Grid}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_projekt_1_1_lvl1_af6d77b42bc01afef095b345dd61fe004}\label{class_projekt_1_1_lvl1_af6d77b42bc01afef095b345dd61fe004}} 
+\index{Projekt.Lvl1@{Projekt.Lvl1}!a1@{a1}}
+\index{a1@{a1}!Projekt.Lvl1@{Projekt.Lvl1}}
+\doxysubsubsection{\texorpdfstring{a1}{a1}}
+{\footnotesize\ttfamily int Projekt.\+Lvl1.\+a1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pierwsza współrzędna postaci 
+
+\mbox{\Hypertarget{class_projekt_1_1_lvl1_aa7e3bce2089f0b8711773919a9f55310}\label{class_projekt_1_1_lvl1_aa7e3bce2089f0b8711773919a9f55310}} 
+\index{Projekt.Lvl1@{Projekt.Lvl1}!B1@{B1}}
+\index{B1@{B1}!Projekt.Lvl1@{Projekt.Lvl1}}
+\doxysubsubsection{\texorpdfstring{B1}{B1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_projekt_1_1_board}{Board}} Projekt.\+Lvl1.\+B1 = new \mbox{\hyperlink{class_projekt_1_1_board}{Board}}(6)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Plansza gry, która jest obiektem klasy \mbox{\hyperlink{class_projekt_1_1_board}{Board}} 
+
+\mbox{\Hypertarget{class_projekt_1_1_lvl1_a08ebad8032b6cc57f62fae9485b6236c}\label{class_projekt_1_1_lvl1_a08ebad8032b6cc57f62fae9485b6236c}} 
+\index{Projekt.Lvl1@{Projekt.Lvl1}!b1@{b1}}
+\index{b1@{b1}!Projekt.Lvl1@{Projekt.Lvl1}}
+\doxysubsubsection{\texorpdfstring{b1}{b1}}
+{\footnotesize\ttfamily int Projekt.\+Lvl1.\+b1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Druga współrzędna postaci 
+
+\mbox{\Hypertarget{class_projekt_1_1_lvl1_a942e4c007aebe98e30c2133bd2a2bffb}\label{class_projekt_1_1_lvl1_a942e4c007aebe98e30c2133bd2a2bffb}} 
+\index{Projekt.Lvl1@{Projekt.Lvl1}!components@{components}}
+\index{components@{components}!Projekt.Lvl1@{Projekt.Lvl1}}
+\doxysubsubsection{\texorpdfstring{components}{components}}
+{\footnotesize\ttfamily System.\+Component\+Model.\+I\+Container Projekt.\+Lvl1.\+components = null\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Required designer variable. 
+
+\mbox{\Hypertarget{class_projekt_1_1_lvl1_aaa07952dc7e6e564321af47ccbda578f}\label{class_projekt_1_1_lvl1_aaa07952dc7e6e564321af47ccbda578f}} 
+\index{Projekt.Lvl1@{Projekt.Lvl1}!M@{M}}
+\index{M@{M}!Projekt.Lvl1@{Projekt.Lvl1}}
+\doxysubsubsection{\texorpdfstring{M}{M}}
+{\footnotesize\ttfamily int Projekt.\+Lvl1.\+M\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Druga współrzędna ruchu 
+
+\mbox{\Hypertarget{class_projekt_1_1_lvl1_a92aab4d39ea60f433b3ddae58a08f675}\label{class_projekt_1_1_lvl1_a92aab4d39ea60f433b3ddae58a08f675}} 
+\index{Projekt.Lvl1@{Projekt.Lvl1}!N@{N}}
+\index{N@{N}!Projekt.Lvl1@{Projekt.Lvl1}}
+\doxysubsubsection{\texorpdfstring{N}{N}}
+{\footnotesize\ttfamily int Projekt.\+Lvl1.\+N\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pierwsza współrzędna ruchu 
+
+\mbox{\Hypertarget{class_projekt_1_1_lvl1_ac8a97899d4c0f89af813016269701f9f}\label{class_projekt_1_1_lvl1_ac8a97899d4c0f89af813016269701f9f}} 
+\index{Projekt.Lvl1@{Projekt.Lvl1}!pnlGrid@{pnlGrid}}
+\index{pnlGrid@{pnlGrid}!Projekt.Lvl1@{Projekt.Lvl1}}
+\doxysubsubsection{\texorpdfstring{pnlGrid}{pnlGrid}}
+{\footnotesize\ttfamily Panel \mbox{[},\mbox{]} Projekt.\+Lvl1.\+pnl\+Grid = new Panel\mbox{[}B1.\+Size, B1.\+Size\mbox{]}}
+
+
+
+Kratki na planszy 
+
+\mbox{\Hypertarget{class_projekt_1_1_lvl1_a5e93cdc8b196eba41451e03b23209375}\label{class_projekt_1_1_lvl1_a5e93cdc8b196eba41451e03b23209375}} 
+\index{Projekt.Lvl1@{Projekt.Lvl1}!Wynik@{Wynik}}
+\index{Wynik@{Wynik}!Projekt.Lvl1@{Projekt.Lvl1}}
+\doxysubsubsection{\texorpdfstring{Wynik}{Wynik}}
+{\footnotesize\ttfamily int Projekt.\+Lvl1.\+Wynik = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Licznik ruchów 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Miksiak/\+Desktop/\+Projekt/\+Projekt/Lvl1.\+cs\item 
+C\+:/\+Users/\+Miksiak/\+Desktop/\+Projekt/\+Projekt/Lvl1.\+Designer.\+cs\end{DoxyCompactItemize}

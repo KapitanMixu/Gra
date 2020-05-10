@@ -6,12 +6,23 @@ using System.Threading.Tasks;
 
 namespace Projekt
 {
-    class Cell
+      /// Klasa w której znajdują się zmienne potrzebne do utworzenia obiektu Cell
+     class Cell
     {
+        /// <summary>
+        /// Zmienna określająca numer rzędu danej komórki
+        /// </summary>
         public int Row;
+        /// <summary>
+        /// Zmienna określająca numer kolumny danej komórki
+        /// </summary>
         public int Column;
-        public string Type;
-
+        
+        /// <summary>
+        /// Funkcja tworząca komórkę
+        /// </summary>
+        /// <param name="x">Numer rzędu komórki</param>
+        /// <param name="y">Numer kolumny komórki</param>
         public Cell(int x, int y)
         {
             Row = x;

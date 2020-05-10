@@ -6,11 +6,23 @@ using System.Threading.Tasks;
 
 namespace Projekt
 {
+    /// Klasa w której znajdują się zmienne potrzebne do utworzenia obiektu Board
+
     class Board
     {
+        /// <summary>
+        /// Zmienna oznaczająca wielkośc planszy
+        /// </summary>
         public int Size;
+        /// <summary>
+        /// Tablica kratek, która jest obiektem klasy Cell
+        /// </summary>
         public Cell[,] theGrid;
-
+        /// <summary>
+        /// Funkcja tworząca planszę na podstawię obiektów klasy Cell
+        /// </summary>
+        /// <param name="s">Wielkość planszy</param>
+        /// @see Size, theGrid
         public Board(int s)
         {
             Size = s;
@@ -25,19 +37,9 @@ namespace Projekt
 
                 }
             }
-            theGrid[3, 3].Type = "Ja";
+           
         }
-    /*   public static void  printBoard(Board X)
-        {
-            for (int i = 0; i < X.Size; i++)
-            {
-                for (int j = 0; j < X.Size; j++)
-                {
-                    Cell c = X.theGrid[i,j];
-
-                }
-            }
-        } */
+    
     }
 
    

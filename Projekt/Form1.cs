@@ -10,199 +10,63 @@ using System.Windows.Forms;
 
 namespace Projekt
 {
+    /// Klasa w której znajdują się funkcje do utworzenia i działania menu
     public partial class Form1 : Form
-    {
-        static Board B1 = new Board(10);
-
-        public Panel[,] pnlGrid = new Panel[B1.Size, B1.Size];
-        int a1, b1, c, a2 , b2, N, M;
-        
-
-
-
-
-
+    { 
+       /// <summary>
+       /// Kontruktor klasy Form1(Menu)
+       /// </summary>
         public Form1()
         {
             InitializeComponent();
             
-            makeBoard();
-           
-
         }
 
-        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        /// <summary>
+        /// Funkcja, która przy kliknięciu  lewym klawiszem myszki na guzik "Poziom I", włącza ten poziom
+        /// </summary>
+        private void button1_Click(object sender, EventArgs e)
         {
-
-           /* if (e.KeyCode == Keys.R)
-            {
-                makeBoard();
-            } */
-
-            if (e.KeyCode == Keys.W)
-            {
-                M = -1;
-                N = 0;
-            }
-            if (e.KeyCode == Keys.S)
-            {
-                M = 1;
-                N = 0;
-            }
-            if (e.KeyCode == Keys.A)
-            {
-                M = 0;
-                N = -1;
-            }
-            if (e.KeyCode == Keys.D)
-            {
-                M = 0;
-                N = 1;
-            }
-
-
-            if (pnlGrid[a1 + N, b1 + M].BackColor == Color.Gray || ((pnlGrid[a1 + 2 * N, b1 + 2 * M].BackColor == Color.Gray || pnlGrid[a1 + 2 * N, b1 + 2 * M].AccessibleName == "Box") && pnlGrid[a1 + N, b1 + M].AccessibleName == "Box")) ;
-            else if (pnlGrid[a1 + 2 * N, b1 + 2 * M].BackColor != Color.Gray && pnlGrid[a1 + N, b1 + M].AccessibleName == "Box")
-            {
-                pnlGrid[a1 + 2 * N, b1 + 2 * M].BackColor = Color.Brown;
-                pnlGrid[a1 + 2 * N, b1 + 2 * M].AccessibleName = "Box";
-                pnlGrid[a1, b1].BackColor = Color.Blue;
-                pnlGrid[a1 ,b1].AccessibleName = null;
-                pnlGrid[a1 + N, b1 + M].BackColor = Color.Gold;
-                pnlGrid[a1 + N, b1 + M].AccessibleName = "Me";
-                a1 = a1 + N;
-                b1 = b1 + M;
-            }
-            else
-            {
-                pnlGrid[a1, b1].BackColor = Color.Blue;
-                pnlGrid[a1, b1].AccessibleName = null;
-                pnlGrid[a1 + N, b1 + M].BackColor = Color.Gold;
-                pnlGrid[a1 + N, b1 + M].AccessibleName = "Me";
-                a1 = a1 + N;
-                b1 = b1 + M;
-            }
-            int ok = 0;
-            for (int i = 0; i < B1.Size; i++)
-            {
-                for (int j = 0; j < B1.Size; j++)
-                {
-                    if (pnlGrid[i, j].AccessibleName == "Box" && pnlGrid[i, j].AccessibleDescription == "Spot")
-                    {
-                        pnlGrid[i, j].BackColor = Color.Green;
-                        
-                    }else if(pnlGrid[i, j].AccessibleName =="Me" && pnlGrid[i, j].AccessibleDescription == "Spot")
-                    {
-                        pnlGrid[i, j].BackColor = Color.Gold;
-                    }
-                    else if(pnlGrid[i, j].AccessibleDescription == "Spot")
-                    {
-                        pnlGrid[i, j].BackColor = Color.White;
-                    }
-                    
-                    if (pnlGrid[i, j].AccessibleDescription == "Spot")
-                    {
-                        
-                        if (pnlGrid[i, j].AccessibleName == "Box")
-                        {
-                            ok = ok + 1;
-                            
-                        }
-
-                        if (ok == 2)
-                         {
-                            label1.Text = "wygranko" ;
-                         }else
-                            label1.Text = "przegranko";
-
-                    }
-                }
-            }
-
-            
-            
-
-            
+            Lvl1 lvl1 = new Lvl1();
+            lvl1.Show();
+            lvl1.SetBounds(this.Location.X, this.Location.Y, this.Width, this.Height);
+            lvl1.Location = this.Location;
+            this.Hide();
         }
 
-        public void makeBoard()
+        /// <summary>
+        /// Funkcja, która przy kliknięciu  lewym klawiszem myszki na guzik "Poziom II", włącza ten poziom
+        /// </summary>
+        private void button2_Click(object sender, EventArgs e)
         {
-            int Psize = panel1.Width / B1.Size ;
-            a1 = 0;
-            b1 = 0;
-            for (int i = 0; i < B1.Size; i++)
-            {
-                for (int j = 0; j < B1.Size; j++)
-                {
-                    pnlGrid[i, j] = new Panel();
-                    pnlGrid[i, j].Height = Psize-5;
-                    pnlGrid[i, j].Width = Psize-5;
-                    c = Psize;
-
-                    panel1.Controls.Add(pnlGrid[i, j]);
-
-                    pnlGrid[i, j].Location = new Point(i * Psize, j * Psize);
-
-                    pnlGrid[i, j].Text = "i" + '!' + 'j';
-                    if (i == 0 | i == B1.Size-1 | j == 0 | j == B1.Size-1)
-                    {
-                      pnlGrid[i, j].BackColor = Color.Gray;
-                    }
-                    else
-                    pnlGrid[i, j].BackColor = Color.Blue;
-                    if ( i == 3 & j == 3)
-                    {
-                        pnlGrid[i,j].BackColor = Color.Gold;
-                        pnlGrid[i, j].AccessibleName = "Me";
-                        //pnlGrid[i, j].BackgroundImage = Image.FromFile(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop) + @"\Projekt\Projekt\postac1.png");
-                        a1 = i;
-                        b1 = j;
-
-                    }
-                    if (i == 4 & j == 4)
-                    {
-                        pnlGrid[i, j].BackColor = Color.Brown;
-                        pnlGrid[i, j].AccessibleName = "Box";
-                        a2 = i;
-                        b2 = j;
-                    }
-                    if (i == 5 & j == 5)
-                    {
-                        pnlGrid[i, j].BackColor = Color.White;
-                        pnlGrid[i, j].AccessibleDescription = "Spot";
-                        a2 = i;
-                        b2 = j;
-                    }
-
-                    if (i == 7 & j == 7)
-                    {
-                        pnlGrid[i, j].BackColor = Color.Brown;
-                        pnlGrid[i, j].AccessibleName = "Box";
-                        a2 = i;
-                        b2 = j;
-                    }
-                    if (i == 6 & j == 6)
-                    {
-                        pnlGrid[i, j].BackColor = Color.White;
-                        pnlGrid[i, j].AccessibleDescription = "Spot";
-                        a2 = i;
-                        b2 = j;
-                    }
-
-                    // pnlGrid[4, 4].BackgroundImage = Image.FromFile(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop) + @"\Projekt\Projekt\postac1.png"); 
-
-
-                }
-                
-            }
-          
-           
+            Lvl2 lvl2 = new Lvl2();
+            lvl2.Show();
+            lvl2.SetBounds(this.Location.X, this.Location.Y, this.Width, this.Height);
+            lvl2.Location = this.Location;
+            this.Hide();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        /// <summary>
+        /// Funkcja, która przy kliknięciu  lewym klawiszem myszki na guzik "Poziom III", włącza ten poziom
+        /// </summary>
+        private void button3_Click(object sender, EventArgs e)
         {
-
+            Lvl3 lvl3 = new Lvl3();
+            lvl3.Show();
+            lvl3.SetBounds(this.Location.X, this.Location.Y, this.Width, this.Height);
+            lvl3.Location = this.Location;
+            this.Hide();
         }
+
+        /// <summary>
+        ///  Funkcja sprawia, że po naciśnieciu "krzyżyka" na pasku z grą, aplikacja wyłączy się
+        /// </summary>
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
+
     }
-    
+
 }

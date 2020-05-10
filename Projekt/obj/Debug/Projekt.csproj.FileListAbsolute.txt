@@ -8,4 +8,7 @@ C:\Users\Miksiak\Desktop\Projekt\Projekt\obj\Debug\Projekt.csproj.CoreCompileInp
 C:\Users\Miksiak\Desktop\Projekt\Projekt\obj\Debug\Projekt.exe
 C:\Users\Miksiak\Desktop\Projekt\Projekt\obj\Debug\Projekt.pdb
 C:\Users\Miksiak\Desktop\Projekt\Projekt\obj\Debug\Projekt.Form1.resources
-C:\Users\Miksiak\Desktop\Projekt\Projekt\bin\Debug\postac1.png
+C:\Users\Miksiak\Desktop\Projekt\Projekt\obj\Debug\Projekt.Lvl1.resources
+C:\Users\Miksiak\Desktop\Projekt\Projekt\obj\Debug\Projekt.win.resources
+C:\Users\Miksiak\Desktop\Projekt\Projekt\obj\Debug\Projekt.Lvl3.resources
+C:\Users\Miksiak\Desktop\Projekt\Projekt\obj\Debug\Projekt.Lvl2.resources
